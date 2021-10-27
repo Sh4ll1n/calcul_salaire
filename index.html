@@ -22,30 +22,30 @@
         <tbody>
         <tr>
             <th scope="row">Annuel</th>
-            <td><Input type="text" id="annuelbrut" name=""></Input></td>
-            <td><Input type="text" id="annuelnet" name=""></Input></td>
+            <td><Input type="text" class="formb" id="annuelbrut" name=""></Input></td>
+            <td><Input type="text" class="formn" id="annuelnet" name=""></Input></td>
             
         </tr>
         <tr>
             <th scope="row">Mensuel</th>
-            <td><Input type="text" id="mensuelbrut" name=""></Input></td>
-            <td><input type="text" id="mensuelnet" name=""></input></td>
+            <td><Input type="text" class="formb" id="mensuelbrut" name=""></Input></td>
+            <td><Input type="text" class="formn" id="mensuelnet" name=""></Input></td>
             
         </tr>
         <tr>
             <th scope="row">Journalier</th>
-            <td><Input type="text" id="journalierbrut" name=""></Input></td>
-            <td><Input type="text" id="journaliernet" name=""></Input></td>
+            <td><Input type="text" class="formb" id="journalierbrut" name=""></Input></td>
+            <td><Input type="text" class="formn" id="journaliernet" name=""></Input></td>
         </tr>
         <tr>
             <th scope="row">Horaires</th>
-            <td><Input type="text" id="horairebrut" name=""></Input></td>
-            <td><Input type="text" id="horairenet" name=""></Input></td>
+            <td><Input type="text" class="formb" id="horairebrut" name=""></Input></td>
+            <td><Input type="text" class="formn" id="horairenet" name=""></Input></td>
         </tr>
         <tr>
             <th scope="row">Options</th>
             <td><button id="" name="">Appliquer le SMIC</button></td>
-            <td><button id="" name="">Taux %: 23</button></td>
+            <td><button id="TAUXX" name="TAUXX">Taux: 23%</button></td> <!-- changer un truc-->
             <td><button id="" name="">Mois : 12</button></td>
             <td><button id="" name="">Heures : 35</button></td>
         </tr>
@@ -53,27 +53,27 @@
             <th scope="row">Statut</th>
             <td>
                 <label for="cadre">Cadre:</label>
-                <input type="checkbox" name="statut"></Input>
+                <input type="checkbox" id="cadre" name="statut" class="statut" value="25.5"></Input>
             </td>
 
             <td>
                 <label for="">Fonctionnaire</label>
-                <input type="checkbox" name="statut"></Input>
+                <input type="checkbox" id="fonctionnaire" name="statut" class="statut" value="15" ></Input>
             </td>
 
             <td>
                 <label for="">Portage</label>
-                <input type="checkbox" name="statut"></Input>
+                <input type="checkbox" id="portage" name="statut" class="statut" value="50"></Input>
             </td>
 
             <td>
                 <label for="">Indépendant/Société</label>
-                <input type="checkbox" name="statut"></Input>
+                <input type="checkbox" id="independant" name="statut" class="statut" value="45"></Input>
             </td>
 
             <td>
                 <label for="">Auto-Entrepreneur</label>
-                <input type="checkbox" name="statut"></Input>
+                <input type="checkbox" id="autoE" name="statut" class="statut" value="25"></Input>
             </td>   
         </tr>
         <tr>
@@ -83,7 +83,7 @@
         </tr>
         </tbody>
     </table>
-    
+    <div id="resultat"></div>
 </div>
     <script src="salaire.js"></script>
     </body>
