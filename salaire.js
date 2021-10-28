@@ -378,5 +378,17 @@ document.getElementById("horairebrut").addEventListener("input", function(){
 });
 });
 
+$('#SMIC').click(function(){
+    $("#annuelbrut").text(function(){
+        (( $('#annuelbrut').val(17496)));
+        ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+        ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+        ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+    
+        $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautre))));
+        $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautre))));
+        $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautre))));
+        $("#horairenet").val(($('#horairebrut').val()*(1-(Txautre))));
+    });
 
-
+});
