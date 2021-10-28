@@ -43,16 +43,15 @@ function JourToHor() {
 //------------------------------------------------------------------
 //------------------------------------------------------------------
 //------------------------------------------------------------------
-
+// $("#annuelbrut").val(($('#annuelnet').val()/(1-(Txautre))));
+//     $("#mensuelbrut").val(($('#mensuelnet').val()/(1-(Txautre))));
+//     $("#journalierbrut").val(($('#journaliernet').val()/(1-(Txautre))));
+//     $("#horairebrut").val(($('#horairenet').val()/(1-(Txautre))));
 //------------------------------------------------------------------
 //----------------------TEST TEST TEST -----------------------------
 //------------------------------------------------------------------
 //------------------------------------------------------------------
 //------------------------------------------------------------------
-
-
-function test(NewArray) {
-    
 
 // PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
 document.getElementById("annuelbrut").addEventListener("input", function(){
@@ -60,15 +59,11 @@ document.getElementById("annuelbrut").addEventListener("input", function(){
     ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
     ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
 
-    $("#annuelnet").val(($('#annuelbrut').val()*(1-(NewArray[5]))));
-    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(NewArray[5]))));
-    $("#journaliernet").val(($('#journalierbrut').val()*(1-(NewArray[5]))));
-    $("#horairenet").val(($('#horairebrut').val()*(1-(NewArray[5]))));
-
-    $("#annuelbrut").val(($('#annuelnet').val()/(1-(NewArray[5]))));
-    $("#mensuelbrut").val(($('#mensuelnet').val()/(1-(NewArray[5]))));
-    $("#journalierbrut").val(($('#journaliernet').val()/(1-(NewArray[5]))));
-    $("#horairebrut").val(($('#horairenet').val()/(1-(NewArray[5]))));
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautre))));
+    
 });
 
 // PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
@@ -77,15 +72,11 @@ document.getElementById("mensuelbrut").addEventListener("input", function(){
     ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
     ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
 
-    $("#annuelnet").val(($('#annuelbrut').val()*(1-(NewArray[5]))));
-    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(NewArray[5]))));
-    $("#journaliernet").val(($('#journalierbrut').val()*(1-(NewArray[5]))));
-    $("#horairenet").val(($('#horairebrut').val()*(1-(NewArray[5]))));
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautre))));
 
-    $("#annuelbrut").val(($('#annuelnet').val()/(1-(NewArray[5]))));
-    $("#mensuelbrut").val(($('#mensuelnet').val()/(1-(NewArray[5]))));
-    $("#journalierbrut").val(($('#journaliernet').val()/(1-(NewArray[5]))));
-    $("#horairebrut").val(($('#horairenet').val()/(1-(NewArray[5]))));
 });
 
 //PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
@@ -94,15 +85,11 @@ document.getElementById("journalierbrut").addEventListener("input", function(){
     ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
     ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
 
-    $("#annuelnet").val(($('#annuelbrut').val()*(1-(NewArray[5]))));
-    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(NewArray[5]))));
-    $("#journaliernet").val(($('#journalierbrut').val()*(1-(NewArray[5]))));
-    $("#horairenet").val(($('#horairebrut').val()*(1-(NewArray[5]))));
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautre))));
 
-    $("#annuelbrut").val(($('#annuelnet').val()/(1-(NewArray[5]))));
-    $("#mensuelbrut").val(($('#mensuelnet').val()/(1-(NewArray[5]))));
-    $("#journalierbrut").val(($('#journaliernet').val()/(1-(NewArray[5]))));
-    $("#horairebrut").val(($('#horairenet').val()/(1-(NewArray[5]))));
 });
 
 //PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
@@ -111,17 +98,13 @@ document.getElementById("horairebrut").addEventListener("input", function(){
     ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
     ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
 
-    $("#annuelnet").val(($('#annuelbrut').val()*(1-(NewArray[5]))));
-    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(NewArray[5]))));
-    $("#journaliernet").val(($('#journalierbrut').val()*(1-(NewArray[5]))));
-    $("#horairenet").val(($('#horairebrut').val()*(1-(NewArray[5]))));
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautre))));
 
-    $("#annuelbrut").val(($('#annuelnet').val()/(1-(NewArray[5]))));
-    $("#mensuelbrut").val(($('#mensuelnet').val()/(1-(NewArray[5]))));
-    $("#journalierbrut").val(($('#journaliernet').val()/(1-(NewArray[5]))));
-    $("#horairebrut").val(($('#horairenet').val()/(1-(NewArray[5]))));
 });
-};
+
 //-------------------------------------------------------------------
 //-------------------------------------------------------------------
 //-------------------------------------------------------------------
@@ -138,18 +121,262 @@ document.getElementById("horairebrut").addEventListener("input", function(){
 
 
 //(((((((((((((((((((((((((((((((((ClICK STATUS)))))))))))))))))))))))))))))))))
-// Quand je click sur la radio cela change JUSTE l'intitulé
-test(NewArray);
+// Quand je click sur la checkbox cela change l'intitulé MAIS ne change pas en direct.
 
+//STATUT CADRE
 $('#cadre').click(function(){
-    var n = $('input:checked').length
-    $( "#TAUXX" ).text((n === 1 ?  ("Taux: 25.5%") : ("Taux: 23%")));
-//TENTATIVE D'APPELER LA FONCTION 
-    console.log(test(NewArray));
-    console.log(NewArray[0]);
-    
+    var c = $('input:checked').length
+    $( "#TAUXX" ).text((c === 1 ?  ("Taux: 25.5%") : ("Taux: 23%")));
+
+// PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("annuelbrut").addEventListener("input", function(){
+    ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+    ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+    ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txcadre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txcadre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txcadre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txcadre))));
+});
+// PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("mensuelbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#mensuelbrut').val()*12)));
+    ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
+    ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txcadre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txcadre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txcadre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txcadre))));
+});
+//PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
+document.getElementById("journalierbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#journalierbrut').val()*260)));
+    ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
+    ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txcadre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txcadre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txcadre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txcadre))));
+});
+//PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
+document.getElementById("horairebrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#horairebrut').val()*1607)));
+    ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
+    ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txcadre))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txcadre))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txcadre))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txcadre))));
+});
 });
 
+//STATUS FONCTIONNAIRE
+$('#fonctionnaire').click(function(){
+    var f = $('input:checked').length
+    $( "#TAUXX" ).text((f === 1 ?  ("Taux: 15%") : ("Taux: 23%")));
+
+// PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("annuelbrut").addEventListener("input", function(){
+    ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+    ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+    ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txfonctionnaire))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txfonctionnaire))));
+});
+// PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("mensuelbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#mensuelbrut').val()*12)));
+    ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
+    ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txfonctionnaire))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txfonctionnaire))));
+});
+//PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
+document.getElementById("journalierbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#journalierbrut').val()*260)));
+    ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
+    ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txfonctionnaire))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txfonctionnaire))));
+});
+//PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
+document.getElementById("horairebrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#horairebrut').val()*1607)));
+    ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
+    ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txfonctionnaire))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txfonctionnaire))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txfonctionnaire))));
+});
+});
+
+//STATUS PORTAGE
+$('#portage').click(function(){
+    var p = $('input:checked').length
+    $( "#TAUXX" ).text((p === 1 ?  ("Taux: 50%") : ("Taux: 23%")));
+
+// PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("annuelbrut").addEventListener("input", function(){
+    ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+    ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+    ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txportage))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txportage))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txportage))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txportage))));
+});
+// PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("mensuelbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#mensuelbrut').val()*12)));
+    ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
+    ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txportage))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txportage))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txportage))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txportage))));
+});
+//PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
+document.getElementById("journalierbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#journalierbrut').val()*260)));
+    ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
+    ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txportage))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txportage))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txportage))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txportage))));
+});
+//PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
+document.getElementById("horairebrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#horairebrut').val()*1607)));
+    ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
+    ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txportage))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txportage))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txportage))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txportage))));
+});
+});
+
+//STATUS INDEPENDANT
+$('#independant').click(function(){
+    var i = $('input:checked').length
+    $( "#TAUXX" ).text((i === 1 ?  ("Taux: 45%") : ("Taux: 23%")));
+
+// PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("annuelbrut").addEventListener("input", function(){
+    ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+    ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+    ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txindependant))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txindependant))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txindependant))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txindependant))));
+});
+// PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("mensuelbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#mensuelbrut').val()*12)));
+    ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
+    ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txindependant))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txindependant))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txindependant))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txindependant))));
+});
+//PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
+document.getElementById("journalierbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#journalierbrut').val()*260)));
+    ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
+    ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txindependant))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txindependant))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txindependant))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txindependant))));
+});
+//PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
+document.getElementById("horairebrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#horairebrut').val()*1607)));
+    ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
+    ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txindependant))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txindependant))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txindependant))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txindependant))));
+});
+});
+
+//STATUS INDEPENDANT
+$('#autoE').click(function(){
+    var au = $('input:checked').length
+    $( "#TAUXX" ).text((au === 1 ?  ("Taux: 25%") : ("Taux: 23%")));
+
+// PERMET DE CONVERTIR LE SALAIRE ANNUEL EN MENSUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("annuelbrut").addEventListener("input", function(){
+    ( $('#mensuelbrut').val(($('#annuelbrut').val()/12)));
+    ( $('#journalierbrut').val(($('#annuelbrut').val()/260)));
+    ( $('#horairebrut').val(($('#annuelbrut').val()/1607)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautoentrepreneur))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautoentrepreneur))));
+});
+// PERMET DE CONVERTIR LE SALAIRE MENSUEL EN ANNUEL,JOURNALIER,HORAIRE + NET et BRUT
+document.getElementById("mensuelbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#mensuelbrut').val()*12)));
+    ( $('#journalierbrut').val(($('#mensuelbrut').val()/21.667)));
+    ( $('#horairebrut').val(($('#mensuelbrut').val()/151.67)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautoentrepreneur))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautoentrepreneur))));
+});
+//PERMET DE CONVERTIR LE SALAIRE JOURNALIER EN ANNUEL,MENSUEL,HORAIRE + NET et BRUT
+document.getElementById("journalierbrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#journalierbrut').val()*260)));
+    ( $('#mensuelbrut').val(($('#journalierbrut').val()*21.667)));
+    ( $('#horairebrut').val(($('#journalierbrut').val()/7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautoentrepreneur))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautoentrepreneur))));
+});
+//PERMET DE CONVERTIR LE SALAIRE HORAIRE EN ANNUEL,MENSUEL,JOURNALIER + NET et BRUT
+document.getElementById("horairebrut").addEventListener("input", function(){
+    ( $('#annuelbrut').val(($('#horairebrut').val()*1607)));
+    ( $('#mensuelbrut').val(($('#horairebrut').val()*151.67)));
+    ( $('#journalierbrut').val(($('#horairebrut').val()*7)));
+
+    $("#annuelnet").val(($('#annuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#mensuelnet").val(($('#mensuelbrut').val()*(1-(Txautoentrepreneur))));
+    $("#journaliernet").val(($('#journalierbrut').val()*(1-(Txautoentrepreneur))));
+    $("#horairenet").val(($('#horairebrut').val()*(1-(Txautoentrepreneur))));
+});
+});
 
 
 
